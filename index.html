@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search OBGYN Master File</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #search-box {
+            width: 300px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        #results {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        #results td, #results th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        #results tr:nth-child(even) {background-color: #f2f2f2;}
+        #results tr:hover {background-color: #ddd;}
+        #results th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Search OBGYN Master File</h1>
+    <input type="text" id="search-box" onkeyup="filterResults()" placeholder="Type to search...">
+    <table id="results">
+        <thead>
+            <tr>
+                <th>Term</th>
+                <th>Description</th>
+                <th>Arabic Term</th>
+                <th>Arabic Description</th>
+            </tr>
+        </thead>
+        <tbody id="data-body">
+            <!-- Data will be inserted here by JavaScript -->
+        </tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
